@@ -5,7 +5,7 @@ import urllib.request
 with urllib.request.urlopen('https://data.nasa.gov/resource/gh4g-9sfh.json') as url:
     json_data = json.load(url)
  
-data_file = open('meteorite_landings.csv', 'w') #newline='')
+data_file = open('meteorite_landings.csv', 'w', newline='')
 csv_writer = csv.writer(data_file)
  
 count = 0
